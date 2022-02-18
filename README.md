@@ -1,10 +1,10 @@
 # JavaScript-foundations-for-modern-web-frameworks
 
-
 * Capture information in a Web Page, process the information and show a response using the DOM.
-Display contents on a web page using the DOM: 
 
-* From a list of numbers, strings and Objects:
+* Display contents on a web page using the DOM: 
+
+  * From a list of numbers, strings and Objects:
   * Create html table or list dynamically from a array of values
   * Detect which value is clicked on and display additional information
 
@@ -28,9 +28,9 @@ Display contents on a web page using the DOM:
 
 * Converting:
 
- * a list of Strings into a list of objects
- * a list to an object
- * an object to a list
+   * a list of Strings into a list of objects
+   * a list to an object
+   * an object to a list
 
 * Use various HTML form input tags text, select, radio & checkbox.
 * Create responsive web pages and widgets. With content displayed next to each other. With appropriate styling & spacing between screen components.
