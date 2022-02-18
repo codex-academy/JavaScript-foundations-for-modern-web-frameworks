@@ -16,11 +16,13 @@ Display contents on a web page using the DOM:
 * Confidently: create functions, factory functions & Object Literals - use them to separate application logic from Front End logic.
 * Exposure to using classes in JavaScript
 
-* Algorithms
+* Algorithms:
+
   * Find the biggest and the smallest value in a list.
   * Group data and then find the smallest and largest values.
 
 * Sort:
+
   * sorting using list’s sort method
   * Bubble sort
 
