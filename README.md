@@ -34,3 +34,25 @@ Display contents on a web page using the DOM:
 
 * Use various HTML form input tags text, select, radio & checkbox.
 * Create responsive web pages and widgets. With content displayed next to each other. With appropriate styling & spacing between screen components.
+
+
+## ES6
+
+ES6 skills
+
+Get more and more confident with these as you move through the programme.
+
+* Declaring variables using const & let
+* Destructuring
+* Spread/rest operator
+* Arrow functions
+* JavaScript classes
+* Template string (Template literal)
+* Object literal Syntax Extensions
+* Promises - with async/await
+
+* Array functions: 
+  * find, 
+  * filter
+  * map
+  * reduce
