@@ -1,46 +1,77 @@
-# JavaScript-foundations-for-modern-web-frameworks
+# Roadmap: JavaScript foundations for modern web frameworks
+
+## Foundational Web Application development skills
+
+The list below is foundational skills that Web App developers should master.
 
 * Capture information in a Web Page, process the information and show a response using the DOM.
-
-* Display contents on a web page using the DOM: 
-
-  * From a list of numbers, strings and Objects:
-  * Create html table or list dynamically from a array of values
-  * Detect which value is clicked on and display additional information
-
-* Filter the contents from a list of numbers, string and Objects and display the result on the screen.
-
+* Display contents on a web page using the DOM from a list of numbers, strings and Objects create html table or list dynamically.
+* Detect which value is clicked on in a list or table and display/capture additional information.
+* Filter the contents from a list of numbers, strings or Objects and display the result on the screen.
 * Capture data on a screen and add it to a list. Show the newly captured data on the screen.
-
 * Validate entered input. Show error messages if required. Show confirmation messages.
-* Confidently: create functions, factory functions & Object Literals - use them to separate application logic from Front End logic.
-* Exposure to using classes in JavaScript
 
-* Algorithms:
+## Foundational Technical skills
+### DOM elements
+
+* Getting DOM element references:
+  * `document.querySelector`
+  * `document.querySelectorAll`
+* Adding events to DOM elements:
+  * `element.addEventListener`
+  * inline events with `onclick` etc
+### HTML elements
+
+You should be able to comfortably use various HTML form input elements such as text, select, radio & checkbox. Also explore slider and hidden.
+
+### Responsive web pages
+
+Ensure that you can create responsive web pages and widgets. With content displayed next to each other. With appropriate styling & spacing between screen components.
+
+Concepts to cover:
+  * flexbox
+  * `display: inline-block`
+  * CSS frameworks - Bootstrap, Materialize & 
+
+### Functions & Objects
+
+You should be able to confidently: 
+
+  * create functions, 
+  * factory functions & Object Literals 
+  
+to separate application logic from Front End logic.
+
+You should gain some exposure using classes in JavaScript, although functions and Factory Functions trumps classes you should know how to use classes.
+
+### Algorithms
+
+You should be getting more an more confident using various different algorithms.
+
+Start by practicing these basic algorithms:
 
   * Find the biggest and the smallest value in a list.
   * Group data and then find the smallest and largest values.
+  * Sorting data:
 
-* Sort:
+    * sorting using list’s sort method
+    * Bubble sort
 
-  * sorting using list’s sort method
-  * Bubble sort
+### Converting data
 
-* Converting:
+An knowing how to convert between various different data types will serve you well.
+
+Practice to convert:
 
    * a list of Strings into a list of objects
    * a list to an object
    * an object to a list
 
-* Use various HTML form input tags text, select, radio & checkbox.
-* Create responsive web pages and widgets. With content displayed next to each other. With appropriate styling & spacing between screen components.
+### ES6
 
+ES6 is a foundational skill to acquire to use frameworks such as ReactJS & VueJS.
 
-## ES6
-
-ES6 skills
-
-Get more and more confident with these as you move through the programme.
+You will get more and more confident with these as you move through the programme.
 
 * Declaring variables using const & let
 * Destructuring
@@ -51,8 +82,25 @@ Get more and more confident with these as you move through the programme.
 * Object literal Syntax Extensions
 * Promises - with async/await
 
-* Array functions: 
-  * find, 
+###  Array functions
+
+  * find
   * filter
   * map
   * reduce
+
+### Useful DOM skills
+
+* Event Bubbling
+* Data attributes
+* Capturing details about the triggered target event.
+
+### Extra skills  
+
+* Using LocalStorage
+  * `JSON.parse` - to create a JSON object.
+  * `JSON.stringify` - to create a string from a JSON object.
+* Using `node`, `npm`, `yarn` & `npx`
+* Using Modules for front end development. 
+  * [Vite](https://vitejs.dev/guide/), parcelJS or create-react-app
+*  Deploying to GitHub/GitLab pages
