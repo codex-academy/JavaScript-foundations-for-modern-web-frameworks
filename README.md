@@ -29,9 +29,12 @@ You should be able to comfortably use various HTML form input elements such as t
 Ensure that you can create responsive web pages and widgets. With content displayed next to each other. With appropriate styling & spacing between screen components.
 
 Concepts to cover:
+  * The box model - `margin`, `border` & `padding`
+  * container elements
   * flexbox
   * `display: inline-block`
-  * CSS frameworks - Bootstrap, Materialize & 
+  * CSS frameworks - Bootstrap, Materialize & TailWind CSS
+  *  media queries `@media (min-width : 1024px) {}` or `@media (max-width : 1024px) {}`
 
 ### Functions & Objects
 
@@ -97,9 +100,12 @@ You will get more and more confident with these as you move through the programm
 
 ### Extra skills  
 
+* `setInterval` & `setTimeout`
+
 * Using LocalStorage
   * `JSON.parse` - to create a JSON object.
   * `JSON.stringify` - to create a string from a JSON object.
+
 * Using `node`, `npm`, `yarn` & `npx`
 * Using Modules for front end development. 
   * [Vite](https://vitejs.dev/guide/), parcelJS or create-react-app
