@@ -17,12 +17,6 @@ If the widget is refreshed a new secret number is created.
 
 Create a random secret number using `let randomNumber = Math.ceil((Math.random() * 100))`
 
-Possible approaches:
-
-* `innerHTML` with String literal
-* `createElement` with `appendChild`
-* `innerHTML` with `HandlebarsJS`.
-
 ## Country flag list
 
 Given arrays of Country names and flags create a web page that show a list of countries with their flags. 
@@ -33,6 +27,12 @@ const countries = ["Argentina", "Brazil", "Chile", "Zambia", "Uganda", "Malawi",
 const flags = ["🇦🇷", "🇧🇷", "🇨🇱", "🇿🇲", "🇺🇬", "🇲🇼", "🇷🇼", "🇮🇪", "🇨🇭"];
 
 ```
+
+Possible approaches:
+
+* `innerHTML` with a Template String and the `.map` function.
+* `createElement` with `appendChild`.
+* `innerHTML` with `HandlebarsJS`.
 
 Deploy your app to GitHub. Once deployed and you shared your URL with the mentors look at the next steps below.
 
