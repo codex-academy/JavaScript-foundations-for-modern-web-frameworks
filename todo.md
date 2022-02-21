@@ -5,6 +5,7 @@ Things to be doing in Week 1:
 * Setup your laptop
 * Create 2 mini widgets
 * Do the [ES6 course](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#es6) in freeCodeCamp
+* Meet & use [Vite](https://vitejs.dev/)
 * Start working on the Words Widget
 
 Things for Week 2:

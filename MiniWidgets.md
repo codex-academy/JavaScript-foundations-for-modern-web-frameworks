@@ -32,9 +32,11 @@ const flags = ["🇦🇷", "🇧🇷", "🇨🇱", "🇿🇲", "🇺🇬", "🇲
 
 ```
 
-Find flags here: https://emojipedia.org/flags/
+Deploy your app to GitHub. Once deployed and you shared your URL with the mentors look at the next steps below.
 
-Next: 
+Find the flag emoji's here: https://emojipedia.org/flags/
+
+Next steps: 
 * add the ability to add more countries,
 	* validate input including the flags - https://stackoverflow.com/questions/18862256/how-to-detect-emoji-using-javascript
 * sort by countries alphabetically by name,
