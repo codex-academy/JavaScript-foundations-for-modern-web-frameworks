@@ -21,7 +21,7 @@ Possible approaches:
 * `createElement` with `appendChild`
 * `innerHTML` with `HandlebarsJS`.
 
-## Country counter
+## Country flag list
 
 Given arrays of Country names and flags create a web page that show a list of countries with their flags. 
 
@@ -36,6 +36,7 @@ Find flags here: https://emojipedia.org/flags/
 
 Next: 
 * add the ability to add more countries,
+	* validate input including the flags - https://stackoverflow.com/questions/18862256/how-to-detect-emoji-using-javascript
 * sort by countries alphabetically by name,
 * store the data in localStorage,
 * add search support.
