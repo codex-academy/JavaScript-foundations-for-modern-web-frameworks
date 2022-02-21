@@ -34,7 +34,7 @@ Concepts to cover:
   * flexbox
   * `display: inline-block`
   * CSS frameworks - Bootstrap, Materialize & TailWind CSS
-  *  media queries `@media (min-width : 1024px) {}` or `@media (max-width : 1024px) {}`
+  *  media queries: `@media (min-width : 1024px) {}` or `@media (max-width : 1024px) {}`
 
 ### Functions & Objects
 
