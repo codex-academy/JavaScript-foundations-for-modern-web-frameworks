@@ -12,7 +12,7 @@ The list below is foundational skills that Web App developers should master.
 * Validate entered input. Show error messages if required. Show confirmation messages.
 
 ## Foundational Technical skills
-### DOM elements
+### Using DOM element references
 
 * Getting DOM element references:
   * `document.querySelector`
@@ -22,7 +22,7 @@ The list below is foundational skills that Web App developers should master.
   * inline events with `onclick` etc
 ### HTML elements
 
-You should be able to comfortably use various HTML form input elements such as text, select, radio & checkbox. Also explore slider and hidden.
+You should be able to comfortably use various HTML form input elements such as text, select, radio & checkbox. Also explore range and hidden.
 
 ### Responsive web pages
 
