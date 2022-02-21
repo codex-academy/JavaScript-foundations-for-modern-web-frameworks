@@ -33,8 +33,13 @@ Concepts to cover:
   * container elements
   * flexbox
   * `display: inline-block`
-  * CSS frameworks - Bootstrap, Materialize & TailWind CSS
-  *  media queries `@media (min-width : 1024px) {}` or `@media (max-width : 1024px) {}`
+  * CSS frameworks to choose 1 from: 
+    * Bootstrap
+    * Materialize
+    * Tailwind CSS
+  * Responsiveness using media queries: 
+    * `@media (min-width : 1024px) {}`  
+    * `@media (max-width : 1024px) {}`
 
 ### Functions & Objects
 

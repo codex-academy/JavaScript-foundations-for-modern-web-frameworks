@@ -15,6 +15,12 @@ If the widget is refreshed a new secret number is created.
 
 Create a random secret number using `let randomNumber = Math.ceil((Math.random() * 100))`
 
+Possible approaches:
+
+* `innerHTML` with String literal
+* `createElement` with `appendChild`
+* `innerHTML` with `HandlebarsJS`.
+
 ## Country counter
 
 Given arrays of Country names and flags create a web page that show a list of countries with their flags. 
@@ -31,5 +37,6 @@ Find flags here: https://emojipedia.org/flags/
 Next: 
 * add the ability to add more countries,
 * sort by countries alphabetically by name,
-* store the data in localStorage.
+* store the data in localStorage,
+* add search support.
 
