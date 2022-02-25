@@ -17,7 +17,9 @@ If the widget is refreshed a new secret number is created.
 
 Create a random secret number using `let randomNumber = Math.ceil((Math.random() * 100))`
 
-## Country flag list
+## Working with dynamic data
+
+### Country flag list
 
 Given arrays of Country names and flags create a web page that show a list of countries with their flags. 
 
@@ -28,14 +30,6 @@ const flags = ["🇦🇷", "🇧🇷", "🇨🇱", "🇿🇲", "🇺🇬", "🇲
 
 ```
 
-Possible approaches:
-
-* `innerHTML` with a Template String and the `.map` function.
-* `createElement` with `appendChild`.
-* `innerHTML` with `HandlebarsJS`.
-
-Deploy your app to GitHub. Once deployed and you shared your URL with the mentors look at the next steps below.
-
 Find the flag emoji's here: https://emojipedia.org/flags/
 
 Next steps: 
@@ -44,4 +38,35 @@ Next steps:
 * sort by countries alphabetically by name,
 * store the data in localStorage,
 * add search support.
+
+
+### Fruit list
+
+> Note: Emoji flags are supported on all major platforms except *Windows*, which displays two-letter country codes instead of emoji flag images.
+If you are using Windows, use the fruits list instead.
+
+```
+const fruitNames = ["Grapes", "Melon", "Watermelon", "Tangerine", "Lemon", "Banana", "Pineapple", "Mango", "Red Apple"];
+
+const fruits = ["🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍", "🥭", "🍎"];
+
+```
+
+Find the flag emoji's here: https://emojipedia.org/food-drink/
+
+Next steps: 
+* add the ability to add more fruits,
+	* validate input including the fruits - https://stackoverflow.com/questions/18862256/how-to-detect-emoji-using-javascript
+* sort by fruits alphabetically by name,
+* store the data in localStorage,
+* add search support.
+
+#### Possible approaches:
+
+* `innerHTML` with a Template String and the `.map` function.
+* `createElement` with `appendChild`.
+* `innerHTML` with `HandlebarsJS`.
+
+Deploy your app to GitHub. Once deployed and you shared your URL with the mentors look at the next steps below.
+
 
