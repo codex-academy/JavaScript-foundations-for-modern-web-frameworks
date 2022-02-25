@@ -42,8 +42,8 @@ Next steps:
 
 ### Fruit list
 
-> Note: Emoji flags are supported on all major platforms except *Windows*, which displays two-letter country codes instead of emoji flag images.
-If you are using Windows, use the fruits list instead.
+> Note: Emoji flags are noy supported on **Windows**, which displays two-letter country codes instead of emoji flag images.
+If you are using ***Windows***, use the fruits list instead.
 
 ```
 const fruitNames = ["Grapes", "Melon", "Watermelon", "Tangerine", "Lemon", "Banana", "Pineapple", "Mango", "Red Apple"];
