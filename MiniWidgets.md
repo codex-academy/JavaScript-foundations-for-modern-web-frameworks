@@ -42,6 +42,9 @@ Next steps:
 
 ### Fruit list
 
+Given arrays of Fruit names and emoji create a web page that show a list of fruits with their emojis.
+
+
 > Note: Emoji flags are noy supported on **Windows**, which displays two-letter country codes instead of emoji flag images.
 If you are using ***Windows***, use the fruits list instead.
 
