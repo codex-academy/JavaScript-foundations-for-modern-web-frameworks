@@ -4,7 +4,7 @@
 
 * [Guessing game](/MiniWidgets.md#guessing-game)
 * [Flags/Fruits Widget](/MiniWidgets.md#working-with-dynamic-data)
-* [Words Widget]()
+* [Words Widget](/WordsWidget.md)
 * [Taxi Rank Widget]()
 
 ## Foundational Web Application development skills
