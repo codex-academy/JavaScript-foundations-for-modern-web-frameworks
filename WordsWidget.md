@@ -54,9 +54,6 @@ Store the last 5 sentences in `localStorage` - reload data after refreshing the 
 
 ### Deploy & email mentors
 
-Once the above functionality is working. Deploy your widget to GitHub pages.
+Once the above functionality is working. Deploy your widget to GitHub pages. And email a link to `gwi-mentors@projectcodex.co`.
 
-And email a link to `gwi-mentors@projectcodex.co`.
-
-Now move on and add the features below.
-
+Well done, your done.
