@@ -3,7 +3,7 @@
 ## Widgets to build
 
 * [Guessing game](/MiniWidgets.md#guessing-game)
-* [Flags/Fruits Widget]()
+* [Flags/Fruits Widget](/MiniWidgets.md#working-with-dynamic-data)
 * [Words Widget]()
 * [Taxi Rank Widget]()
 
