@@ -4,13 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="simple-grid.css">
     <title>Word Widget</title>
 </head>
 <body>
-    <h1>Word Widget</h1>
+    <div class="row">
+        <div class="col-8">
+            <h1>Word Widget</h1>
+        
+            <label for="name">Enter sentence: </label>
+            <input type="text" id="name" name="name" class="text-input" value=" "><br>
+            
+        </div>
+        <div class="col-4" class="Count">
+            Count:
+            <span class="counter">
+                
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button class="Add">Add</button>
+            <button class="Analyze">Analyze</button>
+    
+        </div>
+    </div>
+    <div class="row">
+        <div class="12">
+            <ul class="displaySentence">
 
-    <textarea  cols="20" rows="5"></textarea>
-    <input type="submit">
+            </ul>
+        </div>
+    </div>
 </body>
+<script src="wordsWidget.js"></script>
+<script src="index.js"></script>
 </html>
