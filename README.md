@@ -2,7 +2,7 @@
 
 ## Widgets to build
 
-* [Guessing game](./blob/main/MiniWidgets.md#guessing-game)
+* [Guessing game](/blob/main/MiniWidgets.md#guessing-game)
 * [Flags/Fruits Widget]()
 * [Words Widget]()
 * [Taxi Rank Widget]()
