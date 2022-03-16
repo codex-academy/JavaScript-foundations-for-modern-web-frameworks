@@ -12,16 +12,7 @@ function wordWidget() {
     
     const checkWord = (check, sentence) => {
         let words = sentence
-        if(check === "one"){
-            return words
-        }
-        if(check === "two"){
-            return words
-        } if(check === "three"){
-            return words
-        } if(check === "four"){
-            return words
-        } if(check === "five"){
+        if(check){
             return words
         }
     }

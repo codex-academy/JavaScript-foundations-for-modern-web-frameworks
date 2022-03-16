@@ -37,18 +37,19 @@ hideElem.addEventListener('click', function(){
     let selectedCheck = document.querySelector('input[name="check"]:checked');
 
     console.log(sentenceEnter.value);
-    displaySentences.innerHTML =  wordInstance.checkWord(selectedCheck.value, input.value)
+    displaySentences.innerHTML =  wordInstance.checkWord(selectedCheck.value)
 
     let newHighlight = '';
     let wordCheck = sentenceEnter.value.split(' ');
     for(let i = 0; i < wordCheck.length; i++){
         let highlightWord = wordCheck[i];
         {
-            if(highlightWord.length > selectedCheck){
-                newHighlight += `<mark> ${highlightWord} </mark>`
+            console.log(selectedCheck);
+            if(highlightWord.length > selectedCheck.value){
+                newHighlight += `<mark> ${highlightWord}</mark> `
             }
             else {
-                newHighlight += highlightWord
+                newHighlight += ' '
             }
         }
     }
