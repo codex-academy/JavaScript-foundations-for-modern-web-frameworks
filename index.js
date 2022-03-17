@@ -16,12 +16,18 @@ analyzeElem.addEventListener('click', function(){
     console.log(countWords);
 
     let highlight = '';
+    let theMostLongestW = wordInstance.longestWord();
+
     let theSentences = sentenceEnter.value.split(' ');
         for(let i = 0; i < theSentences.length; i++){
         let wordHighlighted = theSentences[i];
+
         {
             if(wordHighlighted.length > 4) {
             highlight += `<mark>  ${wordHighlighted}  </mark>`
+            if(theMostLongestW.length < 5)
+            highlight += `<mark style="background-color:red"> ${longestWord} </mark> `
+            
             }
             else {
                 highlight += wordHighlighted + ' '
@@ -58,17 +64,16 @@ hideElem.addEventListener('click', function(){
 })
 
 longestWordElem.addEventListener('click', function(){
-    let selectedCheck = document.querySelector('input[name="check"]:checked');
-    console.log(selectedCheck.value);
-    displaySentences.innerHTML =  wordInstance.longestWord(selectedCheck.value)
-
+    console.log(sentenceEnter.value);
+    displaySentences.innerHTML =  wordInstance.longestWord(sentenceEnter.value)
+    console.log(wordInstance.longestWord(sentenceEnter.value));
     let longWordHighlight = '';
     let longCheck = sentenceEnter.value.split(' ');
 
     for(let i = 0; i < longCheck.length; i++){
         let longestWord = longCheck[i];
         {
-            if(longestWord.length > selectedCheck.value){
+            if(longestWord.length < sentenceEnter.value){
                 longWordHighlight += `<mark style="background-color:red"> ${longestWord} </mark> `
             }
             else {

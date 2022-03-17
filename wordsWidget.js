@@ -7,7 +7,8 @@ function wordWidget() {
         return enteredSentence
     }
 
-    const getWords = () => enteredSentence[0].split(' ').length
+    const getWords = () => 
+        enteredSentence[0].split(' ').length
     
     const checkWord = (check, sentence) => {
         let words = sentence
@@ -15,15 +16,24 @@ function wordWidget() {
             return words
         }
     }
-    const longestWord = (check, word) => {
-        let longest = word
-        if(check){
-            console.log(longest);
-            return longest
+    
+    const longestWord = (theLongest) => {
+        
+        let findLong = theLongest.split(' ');
+        console.log(findLong);
+        let mostLongest = '';
+
+      for(let i = 0; i < findLong.length; i++){
+          let longestWord = findLong[i];
+          if(longestWord.length >= mostLongest.length){
+              mostLongest = longestWord;
+          }
         }
+
+        return findLong.filter(theLongest => theLongest.length === mostLongest.length)
     }
     const storedSentences = () => {
-
+        
     }
     return {
         add,
