@@ -7,8 +7,7 @@ function wordWidget() {
         return enteredSentence
     }
 
-    const getWords = () => 
-        enteredSentence[0].split(' ').length
+    const getWords = () => enteredSentence[0].split(' ').length
     
     const checkWord = (check, sentence) => {
         let words = sentence
@@ -16,9 +15,21 @@ function wordWidget() {
             return words
         }
     }
+    const longestWord = (check, word) => {
+        let longest = word
+        if(check){
+            console.log(longest);
+            return longest
+        }
+    }
+    const storedSentences = () => {
+
+    }
     return {
         add,
         getWords,
-        checkWord
+        checkWord,
+        storedSentences,
+        longestWord
     }
 }

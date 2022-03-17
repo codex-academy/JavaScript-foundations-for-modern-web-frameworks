@@ -1,7 +1,8 @@
 const sentenceEnter = document.querySelector('.text-input');
 const countWords = document.querySelector('.counter');
 const analyzeElem = document.querySelector('.Analyze');
-const hideElem = document.querySelector('.Hide')
+const hideElem = document.querySelector('.Hide');
+const longestWordElem = document.querySelector('.Longest')
 const displaySentences = document.querySelector('.displaySentence')
 
 let wordInstance = wordWidget();
@@ -44,7 +45,6 @@ hideElem.addEventListener('click', function(){
     for(let i = 0; i < wordCheck.length; i++){
         let highlightWord = wordCheck[i];
         {
-            console.log(selectedCheck);
             if(highlightWord.length > selectedCheck.value){
                 newHighlight += `<mark> ${highlightWord}</mark> `
             }
@@ -55,7 +55,26 @@ hideElem.addEventListener('click', function(){
     }
     displaySentences.innerHTML = newHighlight;
 
-    btn.onclick = () => {
-        alert(selectedCheck.value);
-     };
+})
+
+longestWordElem.addEventListener('click', function(){
+    let selectedCheck = document.querySelector('input[name="check"]:checked');
+    console.log(selectedCheck.value);
+    displaySentences.innerHTML =  wordInstance.longestWord(selectedCheck.value)
+
+    let longWordHighlight = '';
+    let longCheck = sentenceEnter.value.split(' ');
+
+    for(let i = 0; i < longCheck.length; i++){
+        let longestWord = longCheck[i];
+        {
+            if(longestWord.length > selectedCheck.value){
+                longWordHighlight += `<mark style="background-color:red"> ${longestWord} </mark> `
+            }
+            else {
+                longWordHighlight += ''
+            }
+        }
+    }
+    displaySentences.innerHTML = longWordHighlight;
 })
