@@ -2,7 +2,6 @@ const sentenceEnter = document.querySelector('.text-input');
 const countWords = document.querySelector('.counter');
 const analyzeElem = document.querySelector('.Analyze');
 const hideElem = document.querySelector('.Hide');
-const longestWordElem = document.querySelector('.Longest')
 const displaySentences = document.querySelector('.displaySentence')
 
 let wordInstance = wordWidget();
@@ -12,11 +11,12 @@ analyzeElem.addEventListener('click', function(){
     console.log(sentenceEnter.value);
     displaySentences.innerHTML= wordInstance.add(sentenceEnter.value);
     console.log(displaySentences);
+    let findMostLong =  wordInstance.longestWord(sentenceEnter.value)
     countWords.innerHTML = wordInstance.getWords();
     console.log(countWords);
 
     let highlight = '';
-    let theMostLongestW = wordInstance.longestWord();
+    let longestHighlight = '';
 
     let theSentences = sentenceEnter.value.split(' ');
         for(let i = 0; i < theSentences.length; i++){
@@ -25,17 +25,19 @@ analyzeElem.addEventListener('click', function(){
         {
             if(wordHighlighted.length > 4) {
             highlight += `<mark>  ${wordHighlighted}  </mark>`
-            if(theMostLongestW.length < 5)
-            highlight += `<mark style="background-color:red"> ${longestWord} </mark> `
+            if(findMostLong.length < 5)
+            longestHighlight += `<mark style="background-color: green; color: white;"> ${findMostLong} </mark> `
             
             }
             else {
                 highlight += wordHighlighted + ' '
+                longestHighlight += findMostLong + ' '
             }
         }
     }
-                    displaySentences.innerHTML = highlight;
-                    countWords.innerHTML = theSentences.length
+                    countWords.innerHTML = theSentences.length;
+                    displaySentences.innerHTML = highlight + longestHighlight;
+                    
 
 
 })
@@ -63,23 +65,24 @@ hideElem.addEventListener('click', function(){
 
 })
 
-longestWordElem.addEventListener('click', function(){
-    console.log(sentenceEnter.value);
-    displaySentences.innerHTML =  wordInstance.longestWord(sentenceEnter.value)
-    console.log(wordInstance.longestWord(sentenceEnter.value));
-    let longWordHighlight = '';
-    let longCheck = sentenceEnter.value.split(' ');
 
-    for(let i = 0; i < longCheck.length; i++){
-        let longestWord = longCheck[i];
-        {
-            if(longestWord.length < sentenceEnter.value){
-                longWordHighlight += `<mark style="background-color:red"> ${longestWord} </mark> `
-            }
-            else {
-                longWordHighlight += ''
-            }
-        }
-    }
-    displaySentences.innerHTML = longWordHighlight;
-})
+// longestWordElem.addEventListener('click', function(){
+//     console.log(sentenceEnter.value);
+//     displaySentences.innerHTML =  wordInstance.longestWord(sentenceEnter.value)
+//     console.log(wordInstance.longestWord(sentenceEnter.value));
+//     let longWordHighlight = '';
+//     let longCheck = sentenceEnter.value.split(' ');
+
+//     for(let i = 0; i < longCheck.length; i++){
+//         let longestWord = longCheck[i];
+//         {
+//             if(longestWord.length < sentenceEnter.value){
+//                 longWordHighlight += `<mark style="background-color:red"> ${longestWord} </mark> `
+//             }
+//             else {
+//                 longWordHighlight += ''
+//             }
+//         }
+//     }
+//     displaySentences.innerHTML = longWordHighlight;
+// })

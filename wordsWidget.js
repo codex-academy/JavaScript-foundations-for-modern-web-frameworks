@@ -3,7 +3,8 @@ function wordWidget() {
     const enteredSentence = [];
 
     const add = (sentence) => {
-        enteredSentence.push(sentence)
+        let sentences = sentence
+        enteredSentence.push(sentences)
         return enteredSentence
     }
 
