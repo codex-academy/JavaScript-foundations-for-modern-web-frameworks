@@ -14,6 +14,7 @@ function wordWidget() {
     const checkWord = (check, sentence) => {
         let words = sentence
         if(check > 4){
+            console.log(words);
             return words
         }
     }
@@ -24,7 +25,6 @@ function wordWidget() {
        
         let mostLongest = '';
         let longWordHighlight = '';
-        let highlightMostLong = '';
 
       for(let i = 0; i < findLong.length; i++){
           let longestWord = findLong[i];

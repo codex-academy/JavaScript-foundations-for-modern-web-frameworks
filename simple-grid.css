@@ -52,6 +52,6 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-#mark{
-    background-color: blue; 
-  }
+.check{
+  align-content: center;
+}
