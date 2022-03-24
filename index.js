@@ -7,82 +7,69 @@ const displaySentences = document.querySelector('.displaySentence')
 let wordInstance = wordWidget();
 
 
-analyzeElem.addEventListener('click', function(){
+analyzeElem.addEventListener('click', function () {
     console.log(sentenceEnter.value);
-    displaySentences.innerHTML= wordInstance.add(sentenceEnter.value);
-    console.log(displaySentences);
-    let findMostLong =  wordInstance.longestWord(sentenceEnter.value)
+    displaySentences.innerHTML = wordInstance.add(sentenceEnter.value);
+    // console.log(displaySentences);
     countWords.innerHTML = wordInstance.getWords();
-    console.log(countWords);
+    // console.log(countWords);.
+    let findMostLong = wordInstance.longestWord(sentenceEnter.value)
+    // console.log(findMostLong);
 
     let highlight = '';
-    let longestHighlight = '';
 
     let theSentences = sentenceEnter.value.split(' ');
-        for(let i = 0; i < theSentences.length; i++){
+    for (let i = 0; i < theSentences.length; i++) {
         let wordHighlighted = theSentences[i];
+        console.log(findMostLong, wordHighlighted);
+        if (wordHighlighted.length > 4) {
+            if(findMostLong.includes(wordHighlighted)){
+                highlight += `<mark style="background-color: green; color: black;">  ${wordHighlighted}  </mark>`
 
-        {
-            if(wordHighlighted.length > 4) {
-            highlight += `<mark>  ${wordHighlighted}  </mark>`
-            if(findMostLong.length < 5)
-            longestHighlight += `<mark style="background-color: green; color: white;"> ${findMostLong} </mark> `
-            
             }
-            else {
-                highlight += wordHighlighted + ' '
-                longestHighlight += findMostLong + ' '
+            else{
+                highlight += `<mark> ${wordHighlighted} </mark>`
             }
         }
-    }
-                    countWords.innerHTML = theSentences.length;
-                    displaySentences.innerHTML = highlight + longestHighlight;
-                    
+        else {
 
+            highlight += wordHighlighted + ' ';
+        }
+
+    }
+    console.log(highlight);
+    displaySentences.innerHTML =  highlight ;
+    countWords.innerHTML = theSentences.length;
 
 })
 
-hideElem.addEventListener('click', function(){
+hideElem.addEventListener('click', function () {
     let selectedCheck = document.querySelector('input[name="check"]:checked');
 
     console.log(sentenceEnter.value);
-    displaySentences.innerHTML =  wordInstance.checkWord(selectedCheck.value)
+    displaySentences.innerHTML = wordInstance.checkWord(selectedCheck.value)
+
+    let mostLongHighlight = wordInstance.longestWord(sentenceEnter.value)
+    // console.log(mostLongHighlight);
 
     let newHighlight = '';
+    // let newLongWordHl = ' ';
     let wordCheck = sentenceEnter.value.split(' ');
-    for(let i = 0; i < wordCheck.length; i++){
+    for (let i = 0; i < wordCheck.length; i++) {
         let highlightWord = wordCheck[i];
         {
-            if(highlightWord.length > selectedCheck.value){
+            if (highlightWord.length > 4) {
                 newHighlight += `<mark> ${highlightWord}</mark> `
             }
+            // if(mostLongHighlight.length < 5){
+            //     newLongWordHl += `<mark style="background-color: green; color: white;> ${mostLongHighlight}</mark> `
+            // }
             else {
-                newHighlight += ' '
+                newHighlight + mostLongHighlight + ' ';
+                // newLongWordHl += ' ';
             }
         }
     }
-    displaySentences.innerHTML = newHighlight;
+    displaySentences.innerHTML = newHighlight + mostLongHighlight;
 
 })
-
-
-// longestWordElem.addEventListener('click', function(){
-//     console.log(sentenceEnter.value);
-//     displaySentences.innerHTML =  wordInstance.longestWord(sentenceEnter.value)
-//     console.log(wordInstance.longestWord(sentenceEnter.value));
-//     let longWordHighlight = '';
-//     let longCheck = sentenceEnter.value.split(' ');
-
-//     for(let i = 0; i < longCheck.length; i++){
-//         let longestWord = longCheck[i];
-//         {
-//             if(longestWord.length < sentenceEnter.value){
-//                 longWordHighlight += `<mark style="background-color:red"> ${longestWord} </mark> `
-//             }
-//             else {
-//                 longWordHighlight += ''
-//             }
-//         }
-//     }
-//     displaySentences.innerHTML = longWordHighlight;
-// })
