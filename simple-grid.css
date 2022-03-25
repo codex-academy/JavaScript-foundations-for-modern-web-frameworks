@@ -1,3 +1,8 @@
+body{
+  text-align: center;
+  shape-outside: circle(50%);
+  background-color: rgb(255, 21, 21);
+}
 .container {
     display: block;
     position: relative;

@@ -2,7 +2,7 @@ const sentenceEnter = document.querySelector('.text-input');
 const checkedBox = document.querySelector('.checkbox')
 const countWords = document.querySelector('.counter');
 const analyzeElem = document.querySelector('.Analyze');
-const hideElem = document.querySelector('.Hide');
+// const hideElem = document.querySelector('.Hide');
 const displaySentences = document.querySelector('.displaySentence')
 
 let wordInstance = wordWidget();
@@ -36,7 +36,7 @@ analyzeElem.addEventListener('click', function () {
 
 })
 
-hideElem.addEventListener('click', function () {
+checkedBox.addEventListener('click', function () {
     let selectedCheck = document.querySelector('input[name="check"]:checked');
    console.log(checkedBox.checked);
    if(checkedBox.checked == false){
