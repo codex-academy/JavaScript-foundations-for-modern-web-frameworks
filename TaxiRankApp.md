@@ -15,6 +15,8 @@ Data structure: starts with Arrays move to list.
 ## Extra functionality
 
 * Keep count of the number of taxis leaving each queue.
+* Keep count of the total taxi fare for each trip and overall total for the day. 
+* Ensure that your app is responsive and does not add duplicates and negative values.
 * Store data in localStorage so that data is retained after a screen refresh.
 * Add the ability to add more destinations.
 * What would if take to add more Taxi ranks?
