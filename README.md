@@ -121,4 +121,5 @@ You will get more and more confident with these as you move through the programm
 * Using `node`, `npm`, `yarn` & `npx`
 * Using Modules for front end development. 
   * [Vite](https://vitejs.dev/guide/), parcelJS or create-react-app
+  * [Deploying Vitejs App](https://vitejs.dev/guide/static-deploy.html)
 *  Deploying to GitHub/GitLab pages
